@@ -1,0 +1,69 @@
+{% extends "_base.html" %}
+{% set titulek = 'MOTOMAT Skalica – autosúčiastky, autodoplnky a poistenie' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap">
+    <p class="kicker">Skalica · od roku 1992</p>
+    <h1>Autosúčiastky, autodoplnky a autokozmetika na jednom mieste</h1>
+    <p class="lead">Náhradné diely na zahraničné automobily, originálne diely podľa VIN kódu do 3 pracovných dní a povinné zmluvné poistenie na počkanie.</p>
+    <p class="cta"><a class="tlacitko" href="#kontakt">Napíšte nám</a> <a class="tlacitko druhe" href="#sortiment">Pozrieť sortiment</a></p>
+    <dl class="hodiny">
+      <div><dt>Po – Pi</dt><dd>8:00 – 12:00, 13:00 – 17:00</dd></div>
+      <div><dt>Sobota</dt><dd>8:00 – 11:00</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sekce" id="sortiment">
+  <div class="wrap">
+    <h2>Sortiment</h2>
+    <p class="uvod">Tovar odoberáme približne od 20 dodávateľov zo Slovenska a Českej republiky, a to viackrát denne.</p>
+    <ul class="kat" role="list">
+      {% for k in data.kategorie %}<li>{{ k }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce svetla" id="sluzby">
+  <div class="wrap">
+    <h2>Služby</h2>
+    <ul class="karty" role="list">
+      {% for s in data.sluzby %}<li><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce" id="poistenie">
+  <div class="wrap dva">
+    <div>
+      <h2>Povinné zmluvné poistenie</h2>
+      <p>Poistenie na Vaše vozidlo Vám pripravíme na počkanie do 10 minút. V ponuke je 7 rôznych poisťovní.</p>
+      <p class="poznamka">Poistnému sa venujeme 11 rokov, z toho 7 rokov poisteniu motorových vozidiel.</p>
+    </div>
+    <div class="panel"><strong>Na počkanie</strong><span>do 10 minút</span></div>
+  </div>
+</section>
+
+<section class="sekce svetla" id="o-nas">
+  <div class="wrap">
+    <h2>O nás</h2>
+    <p class="uvod">Naša firma úspešne funguje na slovenskom trhu od roku 1992. Zo začiatku sme sa venovali predaju motocyklov a náhradných dielov, neskôr sme sa na požiadavky zákazníkov špecializovali na autosúčiastky, autodoplnky, autopríslušenstvo a autokozmetiku.</p>
+  </div>
+</section>
+
+<section class="sekce" id="kontakt">
+  <div class="wrap dva">
+    <div>
+      <h2>Kontakt</h2>
+      <address>
+        <strong>Mikuláš Matula – MOTOMAT</strong><br>
+        Potočná 126<br>909 01 Skalica<br>
+        <a href="tel:+421346644119">+421 34 664 4119</a><br>
+        <a href="mailto:info@motomat.sk">info@motomat.sk</a>
+      </address>
+    </div>
+    <div>{% include "_formular.html" %}</div>
+  </div>
+</section>
+{% endblock %}

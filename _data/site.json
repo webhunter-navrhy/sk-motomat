@@ -1,0 +1,59 @@
+{
+  "slug": "sk-motomat",
+  "nazev": "MOTOMAT – Mikuláš Matula",
+  "url": "https://webhunter-navrhy.github.io/sk-motomat/",
+  "base": "/sk-motomat/",
+  "lang": "sk",
+  "popis": "Autosúčiastky, autodoplnky, autokozmetika a povinné zmluvné poistenie v Skalici. Náhradné diely na zahraničné vozidlá aj podľa VIN kódu.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "og-src.jpg",
+  "logo": "",
+  "theme_color": "#494a4a",
+  "typ": "AutoPartsStore",
+  "ico": "30694655",
+  "kontakt": {
+    "email": "info@motomat.sk",
+    "telefon": "+421 34 664 4119",
+    "adresa": {
+      "ulice": "Potočná 126",
+      "psc": "909 01",
+      "mesto": "Skalica",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [
+    "Mo-Fr 08:00-12:00",
+    "Mo-Fr 13:00-17:00",
+    "Sa 08:00-11:00"
+  ],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Správa z webu motomat.sk"
+  },
+  "nav": [
+    {
+      "text": "Sortiment",
+      "href": "#sortiment"
+    },
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Poistenie",
+      "href": "#poistenie"
+    },
+    {
+      "text": "O nás",
+      "href": "#o-nas"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}
